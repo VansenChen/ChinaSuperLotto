@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: superLotto
+Implementation-Version: 1.5.4
+Built-By: Vansen
+Implementation-Vendor-Id: cn.vansen
+Build-Jdk: 1.8.0_112
+Implementation-URL: http://projects.spring.io/spring-boot/vansenWeb/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?641e4e2046a0009790401ab3178e97f4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>好运彩票站</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/bootstrap.css" />
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="/">好运彩票站-超级大乐透</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"> </li>
+        <li><a onClick="wait()">往期</a></li>
+       <!--  <li><a href="/" data-icon="back" onclick="$('.ui-dialog').dialog('close'); return false;" data-role="button" >更新日志</a></li> -->
+        <li><a onClick="updateLog()">更新说明</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" id="search" onsubmit="return false" >
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="一个没用的搜索框" />
+        </div>
+        <button onClick="notice()" type="submit" class="btn btn-default" >别点，没用</button>
+      </form>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- HEADER -->
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">好运彩票站的由来</h1>
+          <p class="text-center">站长是一个非常倒霉的人，他买彩票，每次都可以完美的避开所有的开奖号码。于是，他决定利用他这个超级倒霉的运气，帮助大家排除不会开出的号码，提高中奖概率</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / HEADER --> 
+<!-- 上期开奖号码 -->
+<div class="jumbotron">
+ 		
+ 		
+        <div class="row text-center">
+        	<h2>第<a id="lastTime" style="width:100px; height:30px"></a>期开奖号码</h2>
+        	<p> </p>
+          	<input disabled="disabled" type="text" id="lottoBlueBall1" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+          	<input disabled="disabled" type="text" id="lottoBlueBall2" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="lottoBlueBall3" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="lottoBlueBall4" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="lottoBlueBall5" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="lottoRedBall1" style="width:50px; height:30px; border-style:none; color:#FF0000" maxlength="2" />
+            <input disabled="disabled" type="text" id="lottoRedBall2" style="width:50px; height:30px; border-style:none; color:#FF0000" maxlength="2" />
+       		<p> </p>
+        </div> 
+        
+        <div class="row text-center">
+        	<h2>第<a id="theTime" style="width:100px; height:30px"></a>期不推荐号码</h2>
+        	<p> </p>
+          	<input disabled="disabled" type="text" id="theBadBlueBall1" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+          	<input disabled="disabled" type="text" id="theBadBlueBall2" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="theBadBlueBall3" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="theBadBlueBall4" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="theBadBlueBall5" style="width:50px; height:30px; border-style:none; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="theBadRedBall1" style="width:50px; height:30px; border-style:none; color:#FF0000" maxlength="2" />
+            <input disabled="disabled" type="text" id="theBadRedBall2" style="width:50px; height:30px; border-style:none; color:#FF0000" maxlength="2" />
+        </div>  
+ </div>
+<!--  生成随机号码-1 -->
+<div class="jumbotron">
+  <form  class="row text-center" id="getBadNumber" >
+ 		<h2>第<a id="lastBadTime" style="width:100px; height:30px"></a>期不推荐号码</h2>
+ 		<p> </p>
+        <div>
+          	<input disabled="disabled" type="text" id="badBlueBall1" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+          	<input disabled="disabled" type="text" id="badBlueBall2" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="badBlueBall3" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="badBlueBall4" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="badBlueBall5" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="badRedBall1" style="width:50px; height:30px; color:#FF0000" maxlength="2" />
+            <input disabled="disabled" type="text" id="badRedBall2" style="width:50px; height:30px; color:#FF0000" maxlength="2" />
+            <br/>
+        </div>   
+  </form> 
+      
+  <form  class="row text-center" id="getUserNumber" onsubmit="return false">
+ 		<h2>点击生成一注第<a id="time" style="width:100px; height:30px"></a>期的号码</h2>
+ 		<p>生成的号码中已排除不推荐号码</p>
+ 		<p></p>
+        <div>
+          	<input disabled="disabled" type="text" id="userBlueBall1" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+          	<input disabled="disabled" type="text" id="userBlueBall2" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="userBlueBall3" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="userBlueBall4" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="userBlueBall5" style="width:50px; height:30px; color:#0000C6" maxlength="2" />
+            <input disabled="disabled" type="text" id="userRedBall1" style="width:50px; height:30px; color:#FF0000" maxlength="2" />
+            <input disabled="disabled" type="text" id="userRedBall2" style="width:50px; height:30px; color:#FF0000" maxlength="2" />
+            <br/>
+             <button  type="button" id="submit_usernumber" class="btn btn-default" >生成</button>
+        </div>   
+      </form>    
+ </div>
+<!-- FOOTER -->
+<!-- div class="container" -->
+<div class="jumbotron" >
+  <div class="row">
+    <div class="col-lg-offset-3 col-xs-12 col-lg-6">
+      <div class="jumbotron">
+        <div class="row text-center">
+        	
+          <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>给站长留言</h2>
+          </div>
+          <div> 
+			<img alt="扫码添加站长微信" src="/img/QR.jpg" width="300" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © GoodLuckLotto By VansenChen. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- <script src="/js/jquerybk.js"></script> -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<script src="/js/jquery.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="/js/bootstrap.js"></script>
+<script src="/js/vansen.js"></script>
+<script src="/layer/layer.js"></script>
+<script>
+$(function(){
+	getLottoNumber();
+	getBadNumber();
+})
+
+function notice()
+{
+	alert ("说了没用你不信");
+}
+
+function wait()
+{
+	alert ("页面开发中");
+}
+function updateLog(){
+	getUpdateLog();
+}
+</script>
+<!-- / FOOTER --> 
+
+
+
+</body>
+</html>

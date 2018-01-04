@@ -1,0 +1,15 @@
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/conf/DruidConfiguration.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/controller/MpageController.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/model/NumberEntity.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/Application.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/conf/MyBatisMapperScannerConfig.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/service/BadNumberService.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/controller/IndexController.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/mapper/BadNumberMapper.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/service/UserNumberService.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/conf/MyBatisConfig.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/service/matchNumberService.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/mapper/LottoNumberMapper.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/service/LottoNumberService.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/form/NumberEntityForm.java
+/Users/vansen/Documents/workspace/vansenWeb/src/main/java/cn/vansenweb/mapper/UserNumberMapper.java
